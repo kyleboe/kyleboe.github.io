@@ -1,6 +1,24 @@
+div {
+	font-family: 'Roboto', sans-serif;
+}
+
+.blog-name {
+	font-size: 200%;
+	font-weight: 700;
+
+}
+
 .message {
 	float: right;
-	background-color: black;
 	height: 100px;
 	width: 100px;
+}
+
+.title {
+	font-weight: 400;
+}
+
+.text {
+	font-weight: 300;
+
 }
