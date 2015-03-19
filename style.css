@@ -5,16 +5,25 @@ div {
 .blog-name {
 	font-size: 200%;
 	font-weight: 700;
-
 }
 
 .message img {
 	float: right;
-	width: 30vh;
+	width: 15vh;
+}
+
+.blog-post {
+	padding-top: 30px;
 }
 
 .title {
 	font-weight: 400;
+	font-size: 18px;
+}
+
+.date-time {
+	font-weight: 100;
+	font-size: 14px;
 }
 
 .text {
