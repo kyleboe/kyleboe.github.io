@@ -2,9 +2,14 @@ div {
 	font-family: 'Roboto', sans-serif;
 }
 
+iframe {
+	padding-top: 5px;
+}
+
 .blog-name {
 	font-size: 200%;
 	font-weight: 700;
+	padding-left: 10px;
 }
 
 .message img {
@@ -14,6 +19,8 @@ div {
 
 .blog-post {
 	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .title {
@@ -26,7 +33,11 @@ div {
 	font-size: 14px;
 }
 
-.text {
+.text, .song {
 	font-weight: 300;
+	max-width: 600px;
+}
 
+.song {
+	padding-top: 10px;
 }
