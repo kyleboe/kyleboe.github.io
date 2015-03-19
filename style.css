@@ -8,10 +8,9 @@ div {
 
 }
 
-.message {
+.message img {
 	float: right;
-	height: 100px;
-	width: 100px;
+	width: 30vh;
 }
 
 .title {
