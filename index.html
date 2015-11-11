@@ -28,7 +28,9 @@
 		<div class="time" id="hours"></div>
 		<div class="time" id="min"></div>
 		<div class="time" id="sec"></div>
+		<div id="now-button">Current Time</div>
 	</div>
+	<div id="time-bar"></div>
 	<div class="movie blue">Man Down</div>
 	<div class="intermission"></div>
 	<div class="movie red">Fury</div>
@@ -106,6 +108,7 @@ setInterval( function() {
 	// Add a leading zero to seconds value
 	$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
 	},1000);
+	$("#time-bar").css("margin-top",  function(seconds) { return $(this).css("margin-top") + seconds })
 	
 setInterval( function() {
 	// Create a newDate() object and extract the minutes of the current time on the visitor's
@@ -120,6 +123,12 @@ setInterval( function() {
 	// Add a leading zero to the hours value
 	$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
     }, 1000);	
+});
+
+$("#now-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#time-bar").offset().top-$(window).height()/2
+    }, 1000);
 });
 </script>
 </body>
