@@ -75,9 +75,17 @@ p {
 }
 
 .time-container {
-	float:left;
+	/*float:left;*/
 	display: absolute;
 	position:fixed;
+}
+
+.scale-container {
+	float:right;
+	display: absolute;
+	position:fixed;
+	top:8px;
+	right:8px;
 }
 
 .time {

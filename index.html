@@ -30,67 +30,133 @@
 		<div class="time" id="sec"></div>
 		<div id="now-button">Current Time</div>
 	</div>
+	<div class="scale-container">
+		Scale:
+		<div id="minutes">MIN</div>
+		<div id="seconds">SECONDS</div>
+	</div>
 	<div id="time-bar"></div>
-	<div class="movie blue" style="height: 92px;">Man Down</div>
+	<div class="movie blue" id="manDown">Man Down</div>
 	<div class="intermission"></div>
-	<div class="movie red" style="height: 134px;">Fury</div>
+	<div class="movie red" id="fury">Fury</div>
 	<div class="intermission"></div>
-	<div class="movie green" style="height: 123px;">Nymphomaniac: Vol II</div>
+	<div class="movie green" id="nymphoVolII">Nymphomaniac: Vol II</div>
 	<div class="intermission"></div>
-	<div class="movie yellow" style="height: 117px;">Nymphomaniac: Vol I</div>
+	<div class="movie yellow" id="nymphoVolI">Nymphomaniac: Vol I</div>
 	<div class="intermission"></div>
-	<div class="movie blue" style="height: 103px;">Charlie Countryman</div>
+	<div class="movie blue" id="charlieCountryman">Charlie Countryman</div>
 	<div class="intermission"></div>
-	<div class="movie red" style="height: 125px;">The Company You Keep</div>
+	<div class="movie red" id="companyKeep">The Company You Keep</div>
 	<div class="intermission"></div>
-	<div class="movie green" style="height: 116px;">Lawless</div>
+	<div class="movie green" id="lawLess">Lawless</div>
 	<div class="intermission"></div>
-	<div class="movie yellow" style="height: 154px;">Transformers: Dark of the Moon</div>
+	<div class="movie yellow" id="transDark">Transformers: Dark of the Moon</div>
 	<div class="intermission"></div>
-	<div class="movie blue" style="height: 133px;">Wall Street: Money Never Sleeps</div>
+	<div class="movie blue" id="wallStreet">Wall Street: Money Never Sleeps</div>
 	<div class="intermission"></div>
-	<div class="movie red" style="height: px;">Transformers: Revenge of the Fallen</div>
+	<div class="movie red" id="transRevenge">Transformers: Revenge of the Fallen</div>
 	<div class="intermission"></div>
-	<div class="movie green" style="height: px;">New york, I Love You</div>
+	<div class="movie green" id="newYorkILY">New york, I Love You</div>
 	<div class="intermission"></div>
-	<div class="movie yellow" style="height: px;">Eagle Eye</div>
+	<div class="movie yellow" id="eagleEye">Eagle Eye</div>
 	<div class="intermission"></div>
-	<div class="movie blue" style="height: px;">Indiana Jones: Crystal Skull</div>
+	<div class="movie blue" id="indianaJones">Indiana Jones: Crystal Skull</div>
 	<div class="intermission"></div>
-	<div class="movie red" style="height: px;">Transformers</div>
+	<div class="movie red" id="transOne">Transformers</div>
 	<div class="intermission"></div>
-	<div class="movie green" style="height: px;">Surf's Up</div>
+	<div class="movie green" id="surfsUp">Surf's Up</div>
 	<div class="intermission"></div>
-	<div class="movie yellow" style="height: px;">Disturbia</div>
+	<div class="movie yellow" id="disturbia">Disturbia</div>
 	<div class="intermission"></div>
-	<div class="movie blue" style="height: px;">Bobby</div>
+	<div class="movie blue" id="bobby">Bobby</div>
 	<div class="intermission"></div>
-	<div class="movie red" style="height: px;">A Guide to Recognizing Your Saints</div>
+	<div class="movie red" id="guideSaints">A Guide to Recognizing Your Saints</div>
 	<div class="intermission"></div>
-	<div class="movie green" style="height: px;">The Greatest Game Ever Played</div>
+	<div class="movie green" id="greatestGame">The Greatest Game Ever Played</div>
 	<div class="intermission"></div>
-	<div class="movie yellow" style="height: px;">Constantine</div>
+	<div class="movie yellow" id="constantine">Constantine</div>
 	<div class="intermission"></div>
-	<div class="movie blue" style="height: px;">I, Robot</div>
+	<div class="movie blue" id="iRobot">I, Robot</div>
 	<div class="intermission"></div>
-	<div class="movie red" style="height: px;">The Battle of Shaker Heights</div>
+	<div class="movie red" id="battleShaker">The Battle of Shaker Heights</div>
 	<div class="intermission"></div>
-	<div class="movie green" style="height: px;">Charlie's Angels: Full Throttle</div>
+	<div class="movie green" id="charliesAngels">Charlie's Angels: Full Throttle</div>
 	<div class="intermission"></div>
-	<div class="movie yellow" style="height: px;">Dumb and Dumberer: When Harry Met Lloyd</div>
+	<div class="movie yellow" id="dumbDumberer">Dumb and Dumberer: When Harry Met Lloyd</div>
 	<div class="intermission"></div>
-	<div class="movie blue" style="height: px;">Holes</div>
+	<div class="movie blue" id="holes">Holes</div>
 	<div class="intermission"></div>
-	<div class="movie red" style="height: px;">The Even Stevens Movie</div>
+	<div class="movie red" id="evenStevens">The Even Stevens Movie</div>
 	<div class="intermission"></div>
-	<div class="movie green" style="height: px;">Tru Confessions</div>
+	<div class="movie green" id="truConfessions">Tru Confessions</div>
 	<div class="intermission"></div>
-	<div class="movie yellow" style="height: px;">Hounded</div>
+	<div class="movie yellow" id="hounded">Hounded</div>
 	<div class="intermission"></div>
-	<div class="movie blue" style="height: px;">Breakfast With Einstine</div>
+	<div class="movie blue" id="breakfastEinstine">Breakfast With Einstine</div>
 
 <script type="text/javascript">
 $(document).ready(function() {
+//EFF IT, DOING IT ALL IN JS
+	var manDown = 5520;
+	var fury = 8040;
+	var nymphoVolII = 7380;
+	var nymphoVolI = 7020;
+	var charlieCountryman = 6180;
+	var companyKeep = 7500;
+	var lawLess = 6960;
+	var transDark = 9240;
+	var wallStreet = 7980;
+	var transRevenge = 9000;
+	var newYorkILY = 6180;
+	var eagleEye = 7080;
+	var indianaJones = 7320;
+	var transOne = 8640;
+	var surfsUp = 5100;
+	var disturbia = 6300;
+	var bobby = 7020;
+	var guideSaints = 6000;
+	var greatestGame = 7200;
+	var constantine = 7260;
+	var iRobot = 6900;
+	var battleShaker = 4740;
+	var charliesAngels = 6360;
+	var dumbDumberer = 5100;
+	var holes = 7020;
+	var evenStevens = 5580;
+	var truConfessions = 6720;
+	var hounded = 5520;
+	var breakfastEinstine = 5340;
+
+$("#manDown").css("height", manDown/60);
+$("#fury").css("height", fury/60);
+$("#nymphoVolII").css("height", nymphoVolII/60);
+$("#nymphoVolI").css("height", nymphoVolI/60);
+$("#charlieCountryman").css("height", charlieCountryman/60);
+$("#companyKeep").css("height", companyKeep/60);
+$("#lawLess").css("height", lawLess/60);
+$("#transDark").css("height", transDark/60);
+$("#wallStreet").css("height", wallStreet/60);
+$("#transRevenge").css("height", transRevenge/60);
+$("#newYorkILY").css("height", newYorkILY/60);
+$("#eagleEye").css("height", eagleEye/60);
+$("#indianaJones").css("height", indianaJones/60);
+$("#transOne").css("height", transOne/60);
+$("#surfsUp").css("height", surfsUp/60);
+$("#disturbia").css("height", disturbia/60);
+$("#bobby").css("height", bobby/60);
+$("#guideSaints").css("height", guideSaints/60);
+$("#greatestGame").css("height", greatestGame/60);
+$("#constantine").css("height", constantine/60);
+$("#iRobot").css("height", iRobot/60);
+$("#battleShaker").css("height", battleShaker/60);
+$("#charliesAngels").css("height", charliesAngels/60);
+$("#dumbDumberer").css("height", dumbDumberer/60);
+$("#holes").css("height", holes/60);
+$("#evenStevens").css("height", evenStevens/60);
+$("#truConfessions").css("height", truConfessions/60);
+$("#hounded").css("height", hounded/60);
+$("#breakfastEinstine").css("height", breakfastEinstine/60);
+
 // Create two variable with the names of the months and days in an array
 var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
 var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
@@ -150,7 +216,7 @@ setInterval( function() {
 
 $("#now-button").click(function() {
     $('html, body').animate({
-        scrollTop: $("#time-bar").offset().top-$(window).height()/2
+        scrollTop: ($("#time-bar").offset().top)-($(window).height()/2)
     }, 1000);
 });
 </script>
