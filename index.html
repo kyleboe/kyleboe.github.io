@@ -31,63 +31,63 @@
 		<div id="now-button">Current Time</div>
 	</div>
 	<div id="time-bar"></div>
-	<div class="movie blue">Man Down</div>
+	<div class="movie blue" style="height: 92px;">Man Down</div>
 	<div class="intermission"></div>
-	<div class="movie red">Fury</div>
+	<div class="movie red" style="height: 134px;">Fury</div>
 	<div class="intermission"></div>
-	<div class="movie green">Nymphomaniac: Vol II</div>
+	<div class="movie green" style="height: 123px;">Nymphomaniac: Vol II</div>
 	<div class="intermission"></div>
-	<div class="movie yellow">Nymphomaniac: Vol I</div>
+	<div class="movie yellow" style="height: 117px;">Nymphomaniac: Vol I</div>
 	<div class="intermission"></div>
-	<div class="movie blue">Charlie Countryman</div>
+	<div class="movie blue" style="height: 103px;">Charlie Countryman</div>
 	<div class="intermission"></div>
-	<div class="movie red">The Company You Keep</div>
+	<div class="movie red" style="height: 125px;">The Company You Keep</div>
 	<div class="intermission"></div>
-	<div class="movie green">Lawless</div>
+	<div class="movie green" style="height: 116px;">Lawless</div>
 	<div class="intermission"></div>
-	<div class="movie yellow">Transformers: Dark of the Moon</div>
+	<div class="movie yellow" style="height: 154px;">Transformers: Dark of the Moon</div>
 	<div class="intermission"></div>
-	<div class="movie blue">Wall Street: Money Never Sleeps</div>
+	<div class="movie blue" style="height: 133px;">Wall Street: Money Never Sleeps</div>
 	<div class="intermission"></div>
-	<div class="movie red">Transformers: Revenge of the Fallen</div>
+	<div class="movie red" style="height: px;">Transformers: Revenge of the Fallen</div>
 	<div class="intermission"></div>
-	<div class="movie green">New york, I Love You</div>
+	<div class="movie green" style="height: px;">New york, I Love You</div>
 	<div class="intermission"></div>
-	<div class="movie yellow">Eagle Eye</div>
+	<div class="movie yellow" style="height: px;">Eagle Eye</div>
 	<div class="intermission"></div>
-	<div class="movie blue">Indiana Jones: Crystal Skull</div>
+	<div class="movie blue" style="height: px;">Indiana Jones: Crystal Skull</div>
 	<div class="intermission"></div>
-	<div class="movie red">Transformers</div>
+	<div class="movie red" style="height: px;">Transformers</div>
 	<div class="intermission"></div>
-	<div class="movie green">Surf's Up</div>
+	<div class="movie green" style="height: px;">Surf's Up</div>
 	<div class="intermission"></div>
-	<div class="movie yellow">Disturbia</div>
+	<div class="movie yellow" style="height: px;">Disturbia</div>
 	<div class="intermission"></div>
-	<div class="movie blue">Bobby</div>
+	<div class="movie blue" style="height: px;">Bobby</div>
 	<div class="intermission"></div>
-	<div class="movie red">A Guide to Recognizing Your Saints</div>
+	<div class="movie red" style="height: px;">A Guide to Recognizing Your Saints</div>
 	<div class="intermission"></div>
-	<div class="movie green">The Greatest Game Ever Played</div>
+	<div class="movie green" style="height: px;">The Greatest Game Ever Played</div>
 	<div class="intermission"></div>
-	<div class="movie yellow">Constantine</div>
+	<div class="movie yellow" style="height: px;">Constantine</div>
 	<div class="intermission"></div>
-	<div class="movie blue">I, Robot</div>
+	<div class="movie blue" style="height: px;">I, Robot</div>
 	<div class="intermission"></div>
-	<div class="movie red">The Battle of Shaker Heights</div>
+	<div class="movie red" style="height: px;">The Battle of Shaker Heights</div>
 	<div class="intermission"></div>
-	<div class="movie green">Charlie's Angels: Full Throttle</div>
+	<div class="movie green" style="height: px;">Charlie's Angels: Full Throttle</div>
 	<div class="intermission"></div>
-	<div class="movie yellow">Dumb and Dumberer: When Harry Met Lloyd</div>
+	<div class="movie yellow" style="height: px;">Dumb and Dumberer: When Harry Met Lloyd</div>
 	<div class="intermission"></div>
-	<div class="movie blue">Holes</div>
+	<div class="movie blue" style="height: px;">Holes</div>
 	<div class="intermission"></div>
-	<div class="movie red">The Even Stevens Movie</div>
+	<div class="movie red" style="height: px;">The Even Stevens Movie</div>
 	<div class="intermission"></div>
-	<div class="movie green">Tru Confessions</div>
+	<div class="movie green" style="height: px;">Tru Confessions</div>
 	<div class="intermission"></div>
-	<div class="movie yellow">Hounded</div>
+	<div class="movie yellow" style="height: px;">Hounded</div>
 	<div class="intermission"></div>
-	<div class="movie blue">Breakfast With Einstine</div>
+	<div class="movie blue" style="height: px;">Breakfast With Einstine</div>
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -102,13 +102,36 @@ newDate.setDate(newDate.getDate());
 // Output the day, date, month and year   
 $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
 
+// Crappy JS but it works
+	var rightNow = new Date();
+	var startTime = new Date("11-10-2015 12:00");
+	var diffMs = Math.round((rightNow - startTime) / 60000)
+	$("#time-bar").css("margin-top",  diffMs);
+	// seconds setting
+	var seconds = new Date().getSeconds();
+	$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+	// minutes setting
+	var minutes = new Date().getMinutes();
+	$("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+	// hours setting
+	var hours = new Date().getHours();
+	$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+
 setInterval( function() {
 	// Create a newDate() object and extract the seconds of the current time on the visitor's
 	var seconds = new Date().getSeconds();
 	// Add a leading zero to seconds value
 	$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
 	},1000);
-	$("#time-bar").css("margin-top",  function(seconds) { return $(this).css("margin-top") + seconds })
+	
+setInterval( function() {
+	var rightNow = new Date();
+	var startTime = new Date("11-10-2015 12:00");
+	var diffMs = Math.round((rightNow - startTime) / 60000)
+	$("#time-bar").css("margin-top",  diffMs);
+	console.log(diffMs);
+}, 1000);
+	
 	
 setInterval( function() {
 	// Create a newDate() object and extract the minutes of the current time on the visitor's
