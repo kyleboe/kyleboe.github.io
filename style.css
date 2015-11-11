@@ -6,6 +6,12 @@ iframe {
 	padding-top: 5px;
 }
 
+p {
+	color: #FFF;
+	margin: auto;
+
+}
+
 .blog-name {
 	font-size: 200%;
 	font-weight: 700;
@@ -42,3 +48,29 @@ iframe {
 	padding-top: 10px;
 }
 
+.movie {
+	border-radius: 10px;
+	height: 200px;
+	width:80vw;
+	margin: 0 auto;
+	color: #FFF;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 200px;
+}
+
+.red {
+	background-color: #F44336; /*red*/
+}
+
+.blue {
+	background-color: #2196F3; /* blue */
+}
+
+.green {
+	background-color: #4CAF50; /* green */
+}
+
+.yellow {
+	background-color: #FFC107; /* yellow */
+}
