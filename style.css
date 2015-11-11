@@ -50,13 +50,13 @@ p {
 
 .movie {
 	border-radius: 10px;
-	height: 200px;
+	height: 200px; /*set in js*/
 	width:80vw;
 	margin: 0 auto;
 	color: #FFF;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 200px;
+	line-height: 200px; /*set in js*/
 }
 
 .red {
@@ -73,4 +73,14 @@ p {
 
 .yellow {
 	background-color: #FFC107; /* yellow */
+}
+
+.time-container {
+	float:left;
+	display: absolute;
+	position:fixed;
+}
+
+.time {
+	display:inline;
 }
