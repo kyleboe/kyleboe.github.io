@@ -168,18 +168,23 @@ a.github:hover .link-icon .fa-circle {
   }
   .boe {
     font-size: 13.5rem;
-    line-height: 10rem;
+    line-height: 12rem;
     letter-spacing: -1rem;
   }
   .codes {
     font-size: 7.5rem;
-    line-height: 2.5rem;
+    line-height: 1rem;
     letter-spacing: -0.3rem;
     margin-left: 0.8rem;
   }
   .sm-link i {
     font-size: 18vw;
   }
+  .sm-link .fa-stack {
+  width:18vw;
+  height:18vw;
+  line-height:18vw;
+}
 }
 
 /* Flickity Overrides */
