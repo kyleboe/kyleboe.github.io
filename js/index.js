@@ -7,7 +7,6 @@ $(function(){
   $('.cell-title').fitText(.35);
   $('.subtext').fitText(1.8);
   $('.link-text').fitText(.5);
-  $('.carousel-cell').matchHeight();
   $('.main-carousel').flickity({
     accessibility: true,
     // enable keyboard navigation, pressing left & right keys
@@ -86,6 +85,7 @@ $(function(){
     // at end of cells, wraps-around to first for infinite scrolling
 
   });
+  $('.carousel-cell').matchHeight();
   if (mobileAndTabletcheck()) {
     $('.flickity-prev-next-button').hide()
   }
