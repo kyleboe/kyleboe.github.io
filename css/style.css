@@ -92,7 +92,72 @@ img#kyle {
   background-color: #00d2ff;
 }
 
-@media (max-width: 700px) {
+.boe {
+  color:white;
+}
+.codes {
+  color: #00d2ff;
+  margin-left: -1rem;
+}
+
+.subtext {
+  margin-top: 1rem;
+}
+
+a.spotify:hover .link-icon .fa-spotify {
+  color: #1ED760;
+}
+
+a.spotify .link-icon .fa-circle {
+  display: none;
+}
+
+a.spotify:hover .link-icon .fa-circle {
+  display: inline-block;
+  color:black;
+  -webkit-text-stroke: 1px #1ED760;
+}
+
+/* Twitter Icon Styiling */
+a.twitter:hover .link-icon {
+  color: #55acee;
+  -webkit-text-stroke: 2px white;
+}
+
+/* GitHub Icon Styling */
+a.github:hover .link-icon .fa-github {
+  color: black;
+}
+
+a.github .link-icon .fa-circle {
+  display: none;
+}
+
+a.github:hover .link-icon .fa-circle {
+  display: inline-block;
+}
+
+
+.sm-link i {
+  font-size: 9vw;
+}
+.sm-link .fa-stack {
+  width:9vw;
+  height:9vw;
+  line-height:9vw;
+}
+
+.link-icon {
+  text-align: right;
+}
+.link-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
   .carousel-cell {
     width: 80vw;
   }
@@ -109,46 +174,11 @@ img#kyle {
     font-size: 7.5rem;
     line-height: 2.5rem;
     letter-spacing: -0.3rem;
-    margin-left: 0.8rem !important;
+    margin-left: 0.8rem;
   }
-}
-.boe {
-  color:white;
-}
-.codes {
-  color: #00d2ff;
-  margin-left: -1rem;
-}
-
-a.spotify p:hover i {
-  color: #1ED760;
-}
-
-a.twitter p:hover i {
-  color: #55acee;
-}
-
-a.github p:hover i {
-  color: black;
-}
-
-a p i {
-  -webkit-text-stroke: 2px white;
-}
-.github:hover {
-  color: black;
-}
-
-.sm-link p {
-  display: inline-block;
-  line-height: 100px;
-}
-
-.sm-link i {
-  font-size: 100px;
-}
-.sm-link p {
-  font-size: 30px;
+  .sm-link i {
+    font-size: 18vw;
+  }
 }
 
 /* Flickity Overrides */

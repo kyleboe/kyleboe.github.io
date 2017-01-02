@@ -1,7 +1,9 @@
 $(function(){
   $('.cell-title').fitText(.35);
-  $('.subtext').fitText(1.5);
-  $('.carousel-cell').matchHeight();$('.main-carousel').flickity({
+  $('.subtext').fitText(1.8);
+  $('.link-text').fitText(.5);
+  $('.carousel-cell').matchHeight();
+  $('.main-carousel').flickity({
     accessibility: true,
     // enable keyboard navigation, pressing left & right keys
     adaptiveHeight: false,

@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-  <link rel="stylesheet" media="screen" href="stylesheets/flickity.css">
-  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen" href="css/flickity.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
   <script type="text/javascript" src="js/flickity.pkgd.js"></script>
+  <script type="text/javascript" src="js/jquery.fittext.js"></script>
+  <script type="text/javascript" src="js/jquery.matchHeight.js"></script>
   <meta name="google-site-verification" content="Dnv3pJUr1vb7f6yfaqtLGRsNrZsDNDiGvVAXugVyd6k" />
 </head>
 <body>
   <script type="text/javascript" src="js/index.js"></script>
+  <div class="site-name">
+    <h1 class="boe">BOE</h1>
+    <h1 class="codes">.CODES</h1>
+  </div>
   <div class="main-carousel">
-    <div class="carousel-cell blue">
+    <div class="carousel-cell">
       <p class="cell-title">Hello!</p>
       <div class="img-container">
         <img id="kyle" src="images/kyle.jpg">
-        <p>My name is Kyle Boe and I am a sofware engineer at <a class="blue-bkd" href="https://hint.io">hint.io</a></p>
+        <p class="subtext">My name is Kyle Boe and I am a software engineer at <a class="blue-bkd" href="https://hint.io">Hint.io</a></p>
       </div>
     </div>
-    <div class="carousel-cell dark-blue">
-      
+    <div class="carousel-cell">
+      <p class="cell-title">About</p>
+      <p class="subtext">My desire to know how things work has led me headfirst into a career as a programmer.</p>
+      <p class="subtext">Working with new technologies fuels my passion to better my skills while learning as much as I can each day.</p>
+      <p class="subtext">Feel free to scroll down or check out my GitHub page to see what I have been up to recently.</p>
     </div>
-    <div class="carousel-cell blue">
-      
-    </div>
-    <div class="carousel-cell dark-blue">
-      <i class="fa fa-github-square" aria-hidden="true"></i>
-      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    <div class="carousel-cell">
+      <p class="cell-title">Links</p>
+      <div>
+        <a class="sm-link github" href="https://github.com/kyleboe">
+          <div class="row">
+            <div data-mh="mhGroup" class="col-xs-4 link-icon">
+              <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-github fa-stack-1x" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div data-mh="mhGroup" class="col-xs-7 link-text">kyleboe</div>
+          </div>
+        </a>
+        <a class="sm-link twitter" href="https://twitter.com/kbiz">
+          <div class="row">
+            <div data-mh="mhGroup" class="col-xs-4 link-icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+            <div data-mh="mhGroup" class="col-xs-7 link-text">@kbiz</div>
+          </div>
+        </a>
+        <a class="sm-link spotify" href="https://open.spotify.com/user/legendaryspork">
+          <div class="row">
+            <div data-mh="mhGroup" class="col-xs-4 link-icon">
+              <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-1x"></i>
+                <i class="fa fa-spotify fa-stack-1x" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div data-mh="mhGroup" class="col-xs-7 link-text">Kyle Boe</div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </body>
