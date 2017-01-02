@@ -157,13 +157,14 @@ a.github:hover .link-icon .fa-circle {
   text-align: left;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) {
   .carousel-cell {
     width: 80vw;
   }
   .site-name {
     display: block;
     text-align: center;
+    max-width:65vw;
   }
   .boe {
     font-size: 13.5rem;
