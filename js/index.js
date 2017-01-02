@@ -61,7 +61,7 @@ $(function(){
     // Enable if items have percent widths
     // Disable if items have pixel widths, like images
 
-    prevNextButtons: true,
+    prevNextButtons: !mobileAndTabletcheck(),
     // creates and enables buttons to click to previous & next cells
 
     pageDots: true,
@@ -73,7 +73,7 @@ $(function(){
     rightToLeft: false,
     // enables right-to-left layout
 
-    setGallerySize: true,
+    setGallerySize: false,
     // sets the height of gallery
     // disable if gallery already has height set with CSS
 
@@ -86,7 +86,4 @@ $(function(){
 
   });
   $('.carousel-cell').matchHeight();
-  if (mobileAndTabletcheck()) {
-    $('.flickity-prev-next-button').hide()
-  }
 })
