@@ -1045,6 +1045,11 @@ body {
     height: 62px;
 }
 
+.header-post a {
+    color: #FFF;
+    text-decoration: none;
+}
+
 @media only screen and (min-width:90.625rem) {
     .header-post {
         background: transparent
