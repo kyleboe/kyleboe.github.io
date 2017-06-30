@@ -143,6 +143,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-theme-time-machine (0.0.4)
       jekyll (~> 3.3)
+    jekyll-titleize (0.1.0)
+      titleize (~> 1.3)
     jekyll-titles-from-headings (0.2.0)
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
@@ -183,6 +185,7 @@ GEM
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
+    titleize (1.4.1)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
     tzinfo (1.2.3)
@@ -195,6 +198,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
+  jekyll-titleize
   rb-fsevent (= 0.9.8)
 
 BUNDLED WITH
