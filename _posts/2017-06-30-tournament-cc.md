@@ -28,7 +28,7 @@ I proposed this code challenge to the fine folks at the [Vancouver(US) Ruby Meet
   - [The Bracket must have a winner](#the-bracket-must-have-a-winner)
 
 
-## Build a Tournament Bracket
+## Build A Tournament Bracket
 
 At its most basic it should look something like this:
 
