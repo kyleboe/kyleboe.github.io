@@ -14,7 +14,7 @@ categories:
 
 # Template!
 
-<p class="music-read"><a href="spotify:track:04mVWR2uAdl1ONhlWf93rC">Music for reading(spotify)</a></p>
+<p class="music-read"><a href="spotify:track:04mVWR2uAdl1ONhlWf93rC">Music for reading(spotify)</a> <a href="" target="_blank">(or Apple Music)</a></p>
 
 
 
