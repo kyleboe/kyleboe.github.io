@@ -4,10 +4,7 @@ title: "Tournament Bracket Code Challenge"
 image: 'https://media.giphy.com/media/dDZAjSgm02JS8/giphy.gif'
 date: 2017-06-29 09:00:00
 tags:
-- code
-- challenge
-- ruby
-- rails
+- code-challenge
 description: 'Build a Tournament Bracket Generator'
 categories:
 - Code Challenges
