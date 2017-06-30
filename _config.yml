@@ -1,0 +1,46 @@
+# Site settings
+title: Boe.codes
+description: "Code and other things that live in a blog"
+baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
+url: "http://boe.codes" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+# User settings
+username: boe.codes
+user_title: Kyle Boe - Software Engineer
+email: kyle@boe.codes
+twitter_username: kbiz
+github_username:  kyleboe
+profile_picture: http://boe.codes/images/kyle.jpg
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: "/:title/"
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  - title: home
+    url: /
+  - title: my posts
+    url: /posts
+  - title: series
+    url: /series
+  - title: tags
+    url: /tags
+  - title: about me
+    url: /about
+# projects in header index
+
+# projects:
+#   - name: sample-proj
+#     url: https://github.com/kyleboe/sample-proj
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
