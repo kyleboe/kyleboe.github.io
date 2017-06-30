@@ -8,6 +8,7 @@ tags:
 description: 'Build a Tournament Bracket Generator'
 categories:
 - Code Challenges
+twitter_text: Check out this code challenge!
 ---
 
 <p class="music-read"><a href="spotify:track:2lNFWUrxuNaQsf5I1pDTPr">Music for reading(Spotify)</a> <a href="https://itun.es/us/QKc10?i=886319566" target="_blank">(or Apple Music)</a></p>
