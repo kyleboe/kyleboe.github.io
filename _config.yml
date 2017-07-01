@@ -38,9 +38,9 @@ links:
     url: /about
 # projects in header index
 
-# projects:
-#   - name: sample-proj
-#     url: https://github.com/kyleboe/sample-proj
+projects:
+  - name: Rails.church
+    url: https://github.com/kyleboe/rails-church
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
