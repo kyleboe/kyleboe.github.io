@@ -13,7 +13,7 @@
     {% endif %}
     <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
     {% if page.image %}
-      <img src="{{ page.image }}">
+      <img class="main-image" src="{{ page.image }}">
     {% endif %}
     <article role="article" id="scroll" class="post-content" itemprop="articleBody">
       {{ content }}

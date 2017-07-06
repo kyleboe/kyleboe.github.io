@@ -1150,6 +1150,10 @@ body {
     text-decoration: none;
 }
 
+img.main-image {
+    max-width: 90%;
+}
+
 .post-item {
     text-align: left;
     margin: 1rem 1.25rem;
@@ -1365,7 +1369,8 @@ body {
 
 .post-content iframe {
     margin-top: 1.875rem;
-    width: 100%
+    width: 100%;
+    display: block;
 }
 
 .post-content #twitter-widget-0 {
