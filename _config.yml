@@ -1,15 +1,16 @@
 # Site settings
 title: Boe.codes
 description: "Code and other things that live in a blog"
-baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
-url: "http://boe.codes" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+baseurl: ""
+url: "https://boe.codes"
 # User settings
 username: boe.codes
 user_title: Kyle Boe - Software Engineer
 email: kyle@boe.codes
 twitter_username: kbiz
 github_username:  kyleboe
-profile_picture: /assets/img/kyle_sm.jpg
+profile_picture_sm: /assets/img/kyle_sm.jpg
+profile_picture: /assets/img/kyle.jpg
 
 # Build settings
 markdown: kramdown
@@ -36,11 +37,18 @@ links:
     url: /tags
   - title: about me
     url: /about
-# projects in header index
 
+# projects in header index
 projects:
+  # - name: Some Project
+  #   url: https://github.com/kyleboe/some-project
+
+silly-things:
   - name: Rails.church
     url: https://github.com/kyleboe/rails-church
+
+plugins:
+  - amp-jekyll
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
