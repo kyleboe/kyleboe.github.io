@@ -43,7 +43,7 @@ projects:
   # - name: Some Project
   #   url: https://github.com/kyleboe/some-project
 
-silly-things:
+silly_things:
   - name: Rails.church
     url: https://github.com/kyleboe/rails-church
 
