@@ -7,6 +7,7 @@ group :development do
 end
 
 group :jekyll_plugins do
+  gem 'amp-jekyll'
   gem 'github-pages'
   gem 'jekyll-feed', '~> 0.6'
 end
