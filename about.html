@@ -5,7 +5,7 @@ permalink: /about/index.html
 description: "Who is Kyle Boe?"
 ---
 
-<img itemprop="image" class="img-rounded about_perfil" src=" http://boe.codes/assets/img/kyle.jpg"  >
+<img itemprop="image" class="img-rounded about_perfil" src="{{ site.profile_picture }}"  >
 
 <h2>About Me</h2>
 
@@ -20,6 +20,16 @@ description: "Who is Kyle Boe?"
   <ul class="recent">
     {% for project in site.projects %}
       <li><a href="{{ project.url}}"><h3 class="project-name" itemprop="name">{{ project.name }}</h3></a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<h2>Fun Stuff</h2>
+
+<div class="aboutme">
+  <ul class="recent">
+    {% for goof in site.silly-things %}
+      <li><a href="{{ goof.url}}"><h3 class="project-name" itemprop="name">{{ goof.name }}</h3></a></li>
     {% endfor %}
   </ul>
 </div>
